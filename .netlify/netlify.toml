@@ -1,0 +1,30 @@
+plugins = []
+functionsDirectory = "E:\\reacf-app\\Afrikan\\Afrikan-project\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "E:\\reacf-app\\Afrikan\\Afrikan-project\\dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+functions = "E:\\reacf-app\\Afrikan\\Afrikan-project\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
