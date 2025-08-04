@@ -94,28 +94,26 @@ export default function NavbarComp() {
         </div>
 
         {/* Mobile Menu (Medium and Small Devices) */}
-        {isOpen && (
-          <div className="flex flex-col items-center p-4 space-y-4 md:hidden bg-gray-50">
-            <a href="/" className="hover:text-black">
-              Home
-            </a>
-            <a href="/about" className="hover:text-black">
-              About
-            </a>
-            <a href="/employers" className="hover:text-black">
-              Employers
-            </a>
-            <a href="/services" className="hover:text-black">
-              Services
-            </a>
-            <a href="/mission" className="hover:text-black">
-              Mission
-            </a>
-            <a href="/meettheteam" className="hover:text-black">
-              Meet the Team
-            </a>
-          </div>
-        )}
+      {isOpen && (
+  <div className="flex flex-col items-center p-4 space-y-4 md:hidden bg-gray-50">
+    <Link to="/" className="hover:text-black">
+      Home
+    </Link>
+    <Link to="/aboutus" className="hover:text-black">
+      About
+    </Link>
+    <Link to="/menu" className="hover:text-black">
+      Menu
+    </Link>
+    <Link to="/contact" className="hover:text-black">
+      Contact
+    </Link>
+    <Link to="/eventpackage" className="hover:text-black">
+      Events Packages
+    </Link>
+  </div>
+)}
+
       </header>
     </>
   );
